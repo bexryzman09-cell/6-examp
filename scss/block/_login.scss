@@ -1,0 +1,116 @@
+ .login {
+     background: lab(38.4988% -58.7734 74.4224);
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+ }
+
+
+
+ .login__wrapper {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     
+ }
+
+
+ .login__content {
+     background: #fff;
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     max-width: 500px;
+     width: 100%;
+     padding: 25px;
+     border-radius: 15px;
+ }
+
+ .login__title {
+     padding-bottom: 20px;
+     color: lab(38.4988% -58.7734 74.4224);
+ }
+
+ 
+ .login__span{
+    color: #000;
+    font-weight: 400;
+ }
+  .login__description {
+     text-align: justify;
+     padding-bottom: 30px;
+ }
+
+ .login__form {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+ }
+
+ .login__label {
+     display: flex;
+     border: 2px solid lab(38.4988% -58.7734 74.4224);
+     max-width: 250px;
+     width: 100%;
+     min-width: 200px;
+     padding: 8px 5px;
+     margin-bottom: 20px;
+     border-radius: 8px;
+ }
+
+ .login__user {
+     border: none;
+     max-width: 226px;
+     width: 100%;
+     outline: none;
+
+     &::placeholder {
+         color: lab(38.4988% -58.7734 74.4224);
+         font-size: 15px;
+         font-family: "Oswald", sans-serif;
+     }
+ }
+
+ .login__user__icont {
+     color: #000;
+ }
+
+ .login__password {
+     border: none;
+     max-width: 226px;
+     width: 100%;
+     outline: none;
+
+     &::placeholder {
+         color: lab(38.4988% -58.7734 74.4224);
+         font-size: 15px;
+         font-family: "Oswald", sans-serif;
+     }
+ }
+
+ .login__password__icont {
+     color: #000;
+ }
+
+ .login__button {
+     display: flex;
+     align-self: center;
+     justify-content: center;
+     text-align: center;
+     gap: 15px;
+     max-width: 250px;
+     width: 100%;
+     border-radius: 8px;
+     border: none;
+     padding: 5px 0;
+     background: lab(38.4988% -58.7734 74.4224);
+     color: #fff;
+     font-family: "Oswald", sans-serif;
+     font-size: 15px;
+     cursor: pointer;
+ }
+

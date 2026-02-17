@@ -1,0 +1,111 @@
+.footer {
+    padding: 20px 0;
+    background-color: rgba(0, 128, 0, 0.139);
+}
+
+.footer__brand {
+    display: flex;
+    text-decoration: none;
+    color: lab(38.4988% -58.7734 74.4224);
+    padding-bottom: 10px;
+    max-width: 133px;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer__logo {
+    border-radius: 50%;
+}
+
+// .footer__brand-name {}
+.footer__description {
+    padding-bottom: 20px;
+}
+
+.footer__nav {
+    display: none;
+}
+
+
+
+.footer__bottom {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.footer__copyright {
+    font-size: 13px;
+}
+
+// .footer__socials {}
+
+
+
+.footer__social--facebook {
+    transition: 0.7s;
+
+    &:hover {
+        color: #090cc3;
+    }
+}
+
+.footer__social--instagram {
+    transition: 0.7s;
+
+    &:hover {
+        color: #d406b9;
+    }
+}
+
+.footer__social--youtube {
+    transition: 0.7s;
+
+    &:hover {
+        color: #d90a1f;
+    }
+}
+
+.footer__social--twitter {
+    transition: 0.7s;
+
+    &:hover {
+        color: #095af1;
+    }
+}
+
+@media only screen and (min-width:320px) {
+    .footer__nav {
+        position: fixed;
+        bottom: 0;
+        z-index: 100;
+        left: 0;
+        background: #fff;
+        right: 0;
+        margin: 0 auto;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        border-radius: 7px 7px 0 0;
+        max-width: 1200px;
+        min-width: 285px;
+        width: 100%;
+        gap: 30px;
+
+    }
+
+    .footer__link {
+        color: lab(38.4988% -58.7734 74.4224);
+        text-decoration: none;
+        font-size: 20px;
+        transition: 0.7s;
+        font-family: "Oswald", sans-serif;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .footer__nav {
+        display: none;
+    }
+}

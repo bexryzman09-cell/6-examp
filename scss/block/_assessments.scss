@@ -1,0 +1,23 @@
+ .attendance-table {
+    padding-bottom: 30px;
+ }
+
+// .attendance-table__head {}
+
+  .attendance-table__row {
+    background: #19690031;
+  }
+
+// .attendance-table__row--header {}
+
+.attendance-table__cell {
+    text-align: center;
+}
+.attendance-table__cell--minus{
+    background: #ff0404;
+}
+.attendance-table__cell--plus{
+    background: #0dc000;
+}
+
+// .attendance-table__body {}

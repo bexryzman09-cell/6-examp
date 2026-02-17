@@ -1,0 +1,57 @@
+.header {
+    padding: 20px 0;
+    background-color: rgba(0, 128, 0, 0.139);
+    margin-bottom: 30px;
+}
+
+.header__nav {
+    gap: 50px;
+    display: flex;
+}
+
+.header___content {
+    display: flex;
+    justify-content: space-between;
+    transition: 0.7s;
+}
+
+.logo {
+    border-radius: 50%;
+}
+
+.header__link {
+    color: lab(38.4988% -58.7734 74.4224);
+    text-decoration: none;
+    font-size: 20px;
+    transition: 0.7s;
+    font-family: "Oswald", sans-serif;
+
+    &:hover {
+        color: lab(36.92% -34.79 14.1 / 0.897);
+    }
+}
+
+.header__profile-btn {
+    border-radius: 20%;
+    border: none;
+    cursor: pointer;
+    transition: 0.7s;
+    &:hover {
+        transform: scale(1.08);
+    }
+
+}
+
+@media only screen and (min-width:320px) {
+    .header__nav {
+        display: none;
+    }
+}
+
+@media only screen and (min-width:600px) {
+    .header__nav {
+        display: block;
+        gap: 50px;
+        display: flex;
+    }
+}
