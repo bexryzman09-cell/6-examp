@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Login</title>
+    <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -23,13 +24,13 @@
                     <div class="login__content">
                         <h1 class="login__title">Unione <span class="login__span">School</span></h1>
                         <p class="login__description">
-                            Войдите в свою учетную запись, 
-                            чтобы получить доступ к расписанию, 
+                            Войдите в свою учетную запись,
+                            чтобы получить доступ к расписанию,
                             оценкам и учебным материалам.
-                            Если у вас ещё нет аккаунта, зарегистрируйтесь, 
+                            Если у вас ещё нет аккаунта, зарегистрируйтесь,
                             чтобы стать частью нашего сообщества будущих лидеров.
                         </p>
-                        <form  class="login__form" method="post">
+                        <form class="login__form" method="post">
                             <label class="login__label">
                                 <input class="login__user" type="text" required placeholder="Your name">
                                 <svg class="login__user__icont" xmlns="http://www.w3.org/2000/svg" width="24"
@@ -40,22 +41,21 @@
                                 </svg>
                             </label>
                             <label class="login__label">
-                                <input class="login__password" type="password" required placeholder="Your password">
-                                <svg class="login__password__icont" xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 48 48">
-                                    <title>Password SVG Icon</title>
+                                <input onmouseover="mouseoverPass();" id="password__eye" class="login__password"
+                                    type="password" required placeholder="Your password" inputmode="numeric"
+                                    pattern="[0-9]*" minlength="4">
+                                <svg onclick="togglePass()" id="password__eye" class="login__password__icont"
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                                    <title>Eye-closed SVG Icon</title>
                                     <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round"
-                                        d="M24 25.28a3.26 3.26 0 0 0-1.64 6.07V36h3.32v-4.65a3.28 3.28 0 0 0 1.61-2.8v0A3.27 3.27 0 0 0 24 25.28" />
-                                    <rect width="33.23" height="25.73" x="7.38" y="17.77" fill="none"
-                                        stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
-                                        rx="4.32" />
-                                    <path fill="none" stroke="currentColor" stroke-linecap="round"
-                                        stroke-linejoin="round" d="M13.35 17.77v-2.61a10.66 10.66 0 0 1 21.32 0v2.61" />
+                                        stroke-linejoin="round" stroke-width="2"
+                                        d="M2 10s3.5 4 10 4s10-4 10-4M4 11.645L2 14m20 0l-1.996-2.352M8.914 13.68L8 16.5m7.063-2.812L16 16.5" />
                                 </svg>
+
                             </label>
-                            <button class="login__button" type="submit">Login<svg xmlns="http://www.w3.org/2000/svg" width="24"
-                                    height="24" viewBox="0 0 24 24">
+
+                            <button class="login__button" id="login__button" type="submit">Login<svg xmlns="http://www.w3.org/2000/svg"
+                                    width="24" height="24" viewBox="0 0 24 24">
                                     <title>Login-outline SVG Icon</title>
                                     <path fill="currentColor"
                                         d="M12 18.25a.75.75 0 0 0 0 1.5h6A1.75 1.75 0 0 0 19.75 18V6A1.75 1.75 0 0 0 18 4.25h-6a.75.75 0 0 0 0 1.5h6a.25.25 0 0 1 .25.25v12a.25.25 0 0 1-.25.25z" />
@@ -69,8 +69,8 @@
             </div>
         </section>
     </main>
-
-<script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>

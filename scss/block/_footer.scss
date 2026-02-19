@@ -80,7 +80,7 @@
         bottom: 0;
         z-index: 100;
         left: 0;
-        background: #fff;
+        background-color: rgba(0, 128, 0, 0.442);
         right: 0;
         margin: 0 auto;
         align-items: center;
@@ -91,14 +91,13 @@
         max-width: 1200px;
         min-width: 285px;
         width: 100%;
-        gap: 30px;
-
+        gap: 10px;
     }
 
     .footer__link {
-        color: lab(38.4988% -58.7734 74.4224);
+        color: lab(100% 0.01 -0.01);
         text-decoration: none;
-        font-size: 20px;
+        font-size: 18px;
         transition: 0.7s;
         font-family: "Oswald", sans-serif;
     }

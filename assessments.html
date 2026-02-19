@@ -4,8 +4,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Assessments</title>
     <link rel="stylesheet" href="css/main.css">
+     <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -14,18 +15,19 @@
 </head>
 
 <body>
-    <header class="header">
+   <header class="header">
         <div class="container">
             <div class="header___content">
                 <img class="logo" width="40" height="40" src="/imgs/logo.jpg" alt="logo">
                 <nav class="header__nav">
+
                     <a target="_blank" href="#" class="header__link">Домой</a>
                     <a target="_blank" href="#" class="header__link">Расписаний</a>
                     <a target="_blank" href="#" class="header__link">Оценки</a>
                     <a target="_blank" href="#" class="header__link">Подкурсы</a>
                 </nav>
 
-                <button class="header__profile-btn">
+                <a href="#profile__modal" class="header__profile-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <title>Cat-face SVG Icon</title>
                         <g fill="none">
@@ -43,676 +45,1706 @@
                                 d="M16 23.106c-.537.539-1.457.894-2.5.894c-1.032 0-1.942-.347-2.482-.876c.12.724.928 4.376 4.982 4.376s4.861-3.652 4.982-4.376c-.54.529-1.45.876-2.482.876c-1.044 0-1.963-.355-2.5-.894" />
                         </g>
                     </svg>
-                </button>
+                </a>
+                <!-- модалка -->
+                <div id="profile__modal" class="modal">
+                    <div class="modal__contant">
+                        <a href="#" class="modal__close">X</a>
+                        <a class="modal__link" href="">Профиль</a>
+                         <a class="modal__link" href="">Коментарии</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
     <main>
-        <section>
-            <div class="container">
-                <h1>Математика</h1>
-              <table class="attendance-table">
-    <thead class="attendance-table__head">
-        <tr class="attendance-table__row attendance-table__row--header">
-            <th class="attendance-table__cell">Имя</th>
-            <th class="attendance-table__cell">Сентябрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Октябрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Ноябрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Декабрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Январь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Февраль</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Окончательный</th>
-        </tr>
-    </thead>
-    <tbody class="attendance-table__body">
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 1</td>
-            <td class="attendance-table__cell">23</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
-            <td class="attendance-table__cell">45</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">67</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
-            <td class="attendance-table__cell">80</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-2</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+7</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 2</td>
-            <td class="attendance-table__cell">30</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
-            <td class="attendance-table__cell">55</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+20</td>
-            <td class="attendance-table__cell">77</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-15</td>
-            <td class="attendance-table__cell">60</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+25</td>
-            <td class="attendance-table__cell">95</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
-            <td class="attendance-table__cell">70</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
-            <td class="attendance-table__cell">80</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 3</td>
-            <td class="attendance-table__cell">12</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+7</td>
-            <td class="attendance-table__cell">25</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+20</td>
-            <td class="attendance-table__cell">70</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">80</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">75</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 4</td>
-            <td class="attendance-table__cell">18</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-3</td>
-            <td class="attendance-table__cell">40</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">60</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
-            <td class="attendance-table__cell">75</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">85</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
-            <td class="attendance-table__cell">95</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+3</td>
-            <td class="attendance-table__cell">80</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
+        <section class="assessments">
+            <div class="container container--assessments ">
+                <div class="assessments__wraper">
+                    <div>
+                        <h1 class="assessments__title">Математика</h1>
+                        <table class="attendance-table">
+                            <thead class="attendance-table__head">
+                                <tr class="attendance-table__row attendance-table__row--header">
+                                    <th class="attendance-table__cell">Класс</th>
+                                    <th class="attendance-table__cell">Имя</th>
+                                    <th class="attendance-table__cell">Декабрь</th>
+                                    <th class="attendance-table__cell">+/-</th>
+                                    <th class="attendance-table__cell">Январь</th>
+                                    <th class="attendance-table__cell">+/-</th>
+                                    <th class="attendance-table__cell">Февраль</th>
+                                    <th class="attendance-table__cell">+/-</th>
+                                </tr>
+                            </thead>
+                            <tbody class="attendance-table__body">
+                                <!-- 5-6 Rus -->
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Jumaniyozova Shahina</td>
+                                    <td class="attendance-table__cell">24</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Raximberganova Shaxina</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-50</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Allaberganov Sulaymon</td>
+                                    <td class="attendance-table__cell">13</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-23</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+42</td>
+                                    <td class="attendance-table__cell">29</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-26</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Kodirberdiyev Ibrohim</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-17</td>
+                                    <td class="attendance-table__cell">27</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Matyoqubov Mustafo</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">5</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Axmedjonov Sulaymon</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">yo'q</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 Rus</td>
+                                    <td class="attendance-table__cell">Muxammedov Akrombek</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-1</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
+                                </tr>
 
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-            
-    </tbody>
-</table>
-      <h1>Англиз язык</h1>
-              <table class="attendance-table">
-    <thead class="attendance-table__head">
-        <tr class="attendance-table__row attendance-table__row--header">
-            <th class="attendance-table__cell">Имя</th>
-            <th class="attendance-table__cell">Сентябрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Октябрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Ноябрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Декабрь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Январь</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Февраль</th>
-            <th class="attendance-table__cell">-/+</th>
-            <th class="attendance-table__cell">Окончательный</th>
-        </tr>
-    </thead>
-    <tbody class="attendance-table__body">
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 1</td>
-            <td class="attendance-table__cell">23</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
-            <td class="attendance-table__cell">45</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">67</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
-            <td class="attendance-table__cell">80</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-2</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+7</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 2</td>
-            <td class="attendance-table__cell">30</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
-            <td class="attendance-table__cell">55</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+20</td>
-            <td class="attendance-table__cell">77</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-15</td>
-            <td class="attendance-table__cell">60</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+25</td>
-            <td class="attendance-table__cell">95</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
-            <td class="attendance-table__cell">70</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
-            <td class="attendance-table__cell">80</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 3</td>
-            <td class="attendance-table__cell">12</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+7</td>
-            <td class="attendance-table__cell">25</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+20</td>
-            <td class="attendance-table__cell">70</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">80</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">75</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 4</td>
-            <td class="attendance-table__cell">18</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-3</td>
-            <td class="attendance-table__cell">40</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">60</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
-            <td class="attendance-table__cell">75</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">85</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
-            <td class="attendance-table__cell">95</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+3</td>
-            <td class="attendance-table__cell">80</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
 
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-        <tr class="attendance-table__row">
-            <td class="attendance-table__cell">Студент 5</td>
-            <td class="attendance-table__cell">28</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
-            <td class="attendance-table__cell">50</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
-            <td class="attendance-table__cell">90</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
-            <td class="attendance-table__cell">65</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
-            <td class="attendance-table__cell">88</td>
-            <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
-            <td class="attendance-table__cell">92</td>
-            <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
-            <td class="attendance-table__cell">85</td>
-        </tr>
-            
-    </tbody>
-</table>
+                                <!-- 5-6 O'zbek -->
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Xasanova Zuhra</td>
+                                    <td class="attendance-table__cell">22</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-18</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
+                                    <td class="attendance-table__cell">28</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+13</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Shonazarova Dinora</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-40</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Shakirov Sherali</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-9</td>
+                                    <td class="attendance-table__cell">5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-50</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Raximiy Islombek</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-41</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-20</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Murodbekov Mustafo</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+1</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-30</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Botirov Hamdambek</td>
+                                    <td class="attendance-table__cell">27</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-37</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+3</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Bekturdiyev Imomiddin</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+2</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-37</td>
+                                    <td class="attendance-table__cell">54</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+19</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Baxtiyorova Muborak</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+2</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-40</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Baxtiyorova Hadicha</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-11</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-20</td>
+                                    <td class="attendance-table__cell">38</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Allaberganov Shahriyor</td>
+                                    <td class="attendance-table__cell">42</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                    <td class="attendance-table__cell">41</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-9</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">5-6 O'zbek</td>
+                                    <td class="attendance-table__cell">Abdusheripova Nozima</td>
+                                    <td class="attendance-table__cell">63</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-33</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                </tr>
 
+                                <!-- 7-8 Rus -->
+
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Ro'zmetov Shohjahon</td>
+                                    <td class="attendance-table__cell">51</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-1</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Rustambekova Sabina</td>
+                                    <td class="attendance-table__cell">32</td>
+                                    <td class="attendance-table__cell">—</td>
+                                    <td class="attendance-table__cell">yo'q</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">31</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Ramatjonov Asilbek</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-1</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
+                                    <td class="attendance-table__cell">63</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Yuldashova Shahina</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-13</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-20</td>
+                                    <td class="attendance-table__cell">73</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-18</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Shakirjonov Saidmuhammad</td>
+                                    <td class="attendance-table__cell">49</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-9</td>
+                                    <td class="attendance-table__cell">38</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Ruslanov Otabek</td>
+                                    <td class="attendance-table__cell">11</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-21</td>
+                                    <td class="attendance-table__cell">yo'q</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Ro'zmetova Parizoda</td>
+                                    <td class="attendance-table__cell">98</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+4</td>
+                                    <td class="attendance-table__cell">63</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-35</td>
+                                    <td class="attendance-table__cell">87</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+24</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Abdusharipova Dilnoza</td>
+                                    <td class="attendance-table__cell">89</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-34</td>
+                                    <td class="attendance-table__cell">78</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+23</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Taxirov Temur</td>
+                                    <td class="attendance-table__cell">31</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-9</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+4</td>
+                                    <td class="attendance-table__cell">37</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+2</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Baxtiyorova Tabassum</td>
+                                    <td class="attendance-table__cell">97</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-25</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+2</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Atanazarova Jasmina</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-25</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Muxammedova Mushtariy</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-15</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-16</td>
+                                    <td class="attendance-table__cell">94</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+29</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Xudaynarova Aziza</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-19</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+40</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-25</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Sharipova Amina</td>
+                                    <td class="attendance-table__cell">73</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+45</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-33</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 Rus</td>
+                                    <td class="attendance-table__cell">Matnazarov Behruz</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+40</td>
+                                    <td class="attendance-table__cell">42</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-18</td>
+                                </tr>
+
+                                <!-- 7-8 O'zbek -->
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Erkinov Farrux</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-30</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Axmedova Shabnam</td>
+                                    <td class="attendance-table__cell">27</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+17</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+43</td>
+                                    <td class="attendance-table__cell">5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-65</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Madaminov Maqsadbek</td>
+                                    <td class="attendance-table__cell">53</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-3</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-13</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+20</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Jumaboyev Sunnat</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-25</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Maxsudbekov Muhammadali</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+17</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                    <td class="attendance-table__cell">71</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-4</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Bahodirova Sayyora</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+21</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-17</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Bahodirova Zebiniso</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-6</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                    <td class="attendance-table__cell">43</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-22</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Otaxonova Xonzoda</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+16</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-15</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-25</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Djumaniyozov Akbar</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-13</td>
+                                    <td class="attendance-table__cell">19</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-48</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+41</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Iskandarov Abdulaziz</td>
+                                    <td class="attendance-table__cell">47</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-21</td>
+                                    <td class="attendance-table__cell">33</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-14</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Iskandarova Dilnoza</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+44</td>
+                                    <td class="attendance-table__cell">23</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-65</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Shakirov Mustafo</td>
+                                    <td class="attendance-table__cell">100</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+16</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-48</td>
+                                    <td class="attendance-table__cell">63</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Markosov Shoxjahon</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+36</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-33</td>
+                                    <td class="attendance-table__cell">22</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-33</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Bekchanov Asadbek</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+17</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-30</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Baxtiyorov Mahmudbek</td>
+                                    <td class="attendance-table__cell">41</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-23</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+17</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Rajabov Azizbek</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+24</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-25</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Shixnazarova Jasmina</td>
+                                    <td class="attendance-table__cell">84</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-44</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+17</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Xudoyberganova Nozima</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
+                                    <td class="attendance-table__cell">71</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                    <td class="attendance-table__cell">83</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Atanazarova Saadat</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+23</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-40</td>
+                                    <td class="attendance-table__cell">61</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+26</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Ergashov Mexriddin</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-20</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Muhammadova Nafisa</td>
+                                    <td class="attendance-table__cell">47</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-17</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+18</td>
+                                    <td class="attendance-table__cell">yo'q</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">7-8 O'zbek</td>
+                                    <td class="attendance-table__cell">Bobodjonov Amirbek</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-20</td>
+                                </tr>
+
+                                <!-- 9-11 Rus/O'zbek -->
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Taxirov Jahongir</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                    <td class="attendance-table__cell">yo'q</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-20</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Kutlimurodov Asadbek</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-21</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                    <td class="attendance-table__cell">9</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-6</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Farxodov Shoxjahan</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+21</td>
+                                    <td class="attendance-table__cell">91</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-31</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Saparboyev Shoxrux</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Odamboyev Islombek</td>
+                                    <td class="attendance-table__cell">100</td>
+                                    <td class="attendance-table__cell">maximum</td>
+                                    <td class="attendance-table__cell">100</td>
+                                    <td class="attendance-table__cell">maximum</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-40</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Yusupov Asadbek</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-12</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Allaberganov Sherzod</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                    <td class="attendance-table__cell">28.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-46.5</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Raximboyev Xushud</td>
+                                    <td class="attendance-table__cell">92</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+78</td>
+                                    <td class="attendance-table__cell">95</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+3</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-30</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Sadullayev Behruz</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-9</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+35</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Otajonov Nurmuhammad</td>
+                                    <td class="attendance-table__cell">71</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                    <td class="attendance-table__cell">16</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-55</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+9</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Kurbonboyev Islombek</td>
+                                    <td class="attendance-table__cell">53</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-3</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-53</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+25</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Ravshanbekov Firdavs</td>
+                                    <td class="attendance-table__cell">24</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Qondboyev Diyorbek</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+19</td>
+                                    <td class="attendance-table__cell">17</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-58</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Rahimboyev Zafarbek</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+71</td>
+                                    <td class="attendance-table__cell">21.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-35.5</td>
+                                    <td class="attendance-table__cell">8</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-13.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Rahimboyev Sherzod</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+42</td>
+                                    <td class="attendance-table__cell">5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-77</td>
+                                    <td class="attendance-table__cell">28</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+23</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Sharipova Ziyatoy</td>
+                                    <td class="attendance-table__cell">32</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+33</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-40</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">9-11 Rus/O'zbek</td>
+                                    <td class="attendance-table__cell">Marudov Maqdad</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">0</td>
+                                    <td class="attendance-table__cell">71.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+1.5</td>
+                                    <td class="attendance-table__cell">12.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-59</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h1 class="assessments__title" >ELEMENNTARY</h1>
+                        <table class="attendance-table" oncopy="return false;">
+
+                            <thead class="attendance-table__head">
+                                <tr class="attendance-table__row attendance-table__row--header">
+                                    <th class="attendance-table__cell">Имя</th>
+                                    <th class="attendance-table__cell">Сентябрь</th>
+                                    <th class="attendance-table__cell">Октябрь</th>
+                                    <th class="attendance-table__cell">Ноябрь</th>
+                                    <th class="attendance-table__cell">Декабрь</th>
+                                    <th class="attendance-table__cell">Январь</th>
+                                    <th class="attendance-table__cell">Февраль</th>
+                                    <th class="attendance-table__cell">+/-</th>
+                                </tr>
+                            </thead>
+                            <tbody class="attendance-table__body">
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Qurlimuratov Asadbek</td>
+                                    <td class="attendance-table__cell">57.5</td>
+                                    <td class="attendance-table__cell">47.5</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell">78</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+14</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shonazarova Dilnura</td>
+                                    <td class="attendance-table__cell">42.5</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">80</td>
+                                    <td class="attendance-table__cell">83</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+30</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Qodirberdiyev Ibrohim</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell">83</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Marksov Islombek Sherzod ogli</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">42.5</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">84</td>
+                                    <td class="attendance-table__cell">80</td>
+                                    <td class="attendance-table__cell">87</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+7</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Raximberganova Shahina</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">83</td>
+                                    <td class="attendance-table__cell">80</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Atanazarova Soadat</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">77</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+10</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Allaberganov Shahriyor Dilshod ogli</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell">78</td>
+                                    <td class="attendance-table__cell">62</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+24</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Baxtiyorova Muborak Sherzod qizi</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell">52.5</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">79</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+26</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Ergashov Mezriddin</td>
+                                    <td class="attendance-table__cell">52.5</td>
+                                    <td class="attendance-table__cell">37.5</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell">87</td>
+                                    <td class="attendance-table__cell">89</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-4</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Rozmetov Shoxjahon</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">90</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell">84</td>
+                                    <td class="attendance-table__cell">84</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shixnazarova Zarina</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">85</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell">84</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+3</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Xudayberganova Nozima</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">79</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-1</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Jumaniyazov Akbar Raximovich</td>
+                                    <td class="attendance-table__cell">57.5</td>
+                                    <td class="attendance-table__cell">47.5</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Taxirov Temurbek Jamshid Ogli</td>
+                                    <td class="attendance-table__cell">32.5</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell">69</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell">79</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+4</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Bahodirova Zebiniso Temur qizi</td>
+                                    <td class="attendance-table__cell">52.5</td>
+                                    <td class="attendance-table__cell">47.5</td>
+                                    <td class="attendance-table__cell">90</td>
+                                    <td class="attendance-table__cell">79</td>
+                                    <td class="attendance-table__cell">77</td>
+                                    <td class="attendance-table__cell">77</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shakirjonov Saidmuxammad Rasulbek o'g'li</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">57.5</td>
+                                    <td class="attendance-table__cell">96</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Baxtiyatova Hadicha Yusupboy qizi</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell">66</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+8</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Sharipova Amina</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">34</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">73</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Bekturdiyev Imomiddin Azizbek o'g'li</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell">77</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-4</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Rajabov Azizbek Oybek o'g'li</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell">43</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+29</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Xudaynarazova Aziza</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">80</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell">69</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+2</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Raximiy Islombek Sharifovich</td>
+                                    <td class="attendance-table__cell">22.5</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">56</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shixnazarov Shaxriyor</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Ahmedova Shabnam</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">18</td>
+                                    <td class="attendance-table__cell">43</td>
+                                    <td class="attendance-table__cell">49</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Rajabboyev Sulaymon Sarvar o'g'li</td>
+                                    <td class="attendance-table__cell">27.5</td>
+                                    <td class="attendance-table__cell">35.2</td>
+                                    <td class="attendance-table__cell">44</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">39</td>
+                                    <td class="attendance-table__cell">63</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+24</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Matniyazov Behruzbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">62</td>
+                                    <td class="attendance-table__cell">44</td>
+                                    <td class="attendance-table__cell">41</td>
+                                    <td class="attendance-table__cell">62</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+21</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Abdusheripova Nozima</td>
+                                    <td class="attendance-table__cell">10</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell">49</td>
+                                    <td class="attendance-table__cell">61</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Babodjanov Amirbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">44</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">46</td>
+                                    <td class="attendance-table__cell">61</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+15</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Jumanazarov Feruzbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">54</td>
+                                    <td class="attendance-table__cell">59</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Iskandarov Abdulaziz Safoboy ogli</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">37</td>
+                                    <td class="attendance-table__cell">66</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell">53</td>
+                                    <td class="attendance-table__cell">59</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Madaminov Jaloladdin</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">22</td>
+                                    <td class="attendance-table__cell">42</td>
+                                    <td class="attendance-table__cell">47</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shonazarova Dinora Alisher qizi</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell">10</td>
+                                    <td class="attendance-table__cell">56</td>
+                                    <td class="attendance-table__cell">39</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Ozodov Diyorbek Shonazarovich</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">53</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Ruslanov Otabek Arslan o'g'li</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell">59</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell">56</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Erkinov Farrux</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">53</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+13</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Hasanov Zuhra</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">59</td>
+                                    <td class="attendance-table__cell">59</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-7</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Yusupov Asadbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">44</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">52</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-6</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Atajonov Nurmuhammad O'tkirbekovich</td>
+                                    <td class="attendance-table__cell">42.5</td>
+                                    <td class="attendance-table__cell">22.5</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">66</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">51</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-4</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shakirov Sherali Jonibek o'g'li</td>
+                                    <td class="attendance-table__cell">17.5</td>
+                                    <td class="attendance-table__cell">7.5</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Botirov Hamdambek Xursandbek o'g'li</td>
+                                    <td class="attendance-table__cell">27.5</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">44</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+20</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Murodbekov Mustafo</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">22.5</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">42</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Otaxonova Xonzoda Maxmud qizi</td>
+                                    <td class="attendance-table__cell">20</td>
+                                    <td class="attendance-table__cell">15</td>
+                                    <td class="attendance-table__cell">37</td>
+                                    <td class="attendance-table__cell">37</td>
+                                    <td class="attendance-table__cell">41</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-1</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Rahimboyev Zafarbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell">63</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Murodov Maqsadbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Muhammetova Nafisa</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Shakirov Mustafa Atadjanovich</td>
+                                    <td class="attendance-table__cell">33.5</td>
+                                    <td class="attendance-table__cell">37.5</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Rakhmanov Sobirjon Sabirovich</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">86</td>
+                                    <td class="attendance-table__cell">87</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell">67</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Allahbergenov Sulaymon Anvarovich</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">37.5</td>
+                                    <td class="attendance-table__cell">94</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell">64</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Rahimboyev Sherzod</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">62</td>
+                                    <td class="attendance-table__cell">62</td>
+                                    <td class="attendance-table__cell">62</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">Zainov Zoiybek</td>
+                                    <td class="attendance-table__cell">25</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="assesssments__wraper">
+
+                    <div>
+                        <h1 class="assessments__title">SEFR</h1>
+                        <table class="attendance-table" oncopy="return false;">
+
+                            <thead class="attendance-table__head">
+
+                                <tr class="attendance-table__row attendance-table__row--header">
+                                    <th class="attendance-table__cell">Группа</th>
+                                    <th class="attendance-table__cell">Имя</th>
+                                    <th class="attendance-table__cell">Ноябрь</th>
+                                    <th class="attendance-table__cell">Декабрь</th>
+                                    <th class="attendance-table__cell">Январь</th>
+                                    <th class="attendance-table__cell">Февраль</th>
+                                    <th class="attendance-table__cell">+/-</th>
+                                </tr>
+                            </thead>
+                            <tbody class="attendance-table__body">
+                                <!-- CEFR 1-GURUH -->
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Yuldasheva Shahina</td>
+                                    <td class="attendance-table__cell">71.25</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">89</td>
+                                    <td class="attendance-table__cell">84.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-4.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Ramatjonov Aslbek</td>
+                                    <td class="attendance-table__cell">73.75</td>
+                                    <td class="attendance-table__cell">66</td>
+                                    <td class="attendance-table__cell">78</td>
+                                    <td class="attendance-table__cell">81.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+3.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Abdusharipova Dilnoza</td>
+                                    <td class="attendance-table__cell">76.25</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell">80.5</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+0.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Bahadirova Shabnam</td>
+                                    <td class="attendance-table__cell">68.76</td>
+                                    <td class="attendance-table__cell">73</td>
+                                    <td class="attendance-table__cell">73.5</td>
+                                    <td class="attendance-table__cell">77.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+4</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Bahtiyorova Osiyo</td>
+                                    <td class="attendance-table__cell">78</td>
+                                    <td class="attendance-table__cell">76</td>
+                                    <td class="attendance-table__cell">79</td>
+                                    <td class="attendance-table__cell">76.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Shermatova Munisa</td>
+                                    <td class="attendance-table__cell">94</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell">63.5</td>
+                                    <td class="attendance-table__cell">75.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+12</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Jumaniyozova Shahina</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">84</td>
+                                    <td class="attendance-table__cell">68.5</td>
+                                    <td class="attendance-table__cell">71.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+3</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Xudayyorov Olloshukr</td>
+                                    <td class="attendance-table__cell">56.25</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">71</td>
+                                    <td class="attendance-table__cell">59.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-11.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Rustambekova Sabina</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">0</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Sadullayev Behruz</td>
+                                    <td class="attendance-table__cell">45</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">56</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-16</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Bogibekova Alina</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell">38</td>
+                                    <td class="attendance-table__cell">56.5</td>
+                                    <td class="attendance-table__cell">54</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Bekchanov Asadbek</td>
+                                    <td class="attendance-table__cell">71.25</td>
+                                    <td class="attendance-table__cell">40</td>
+                                    <td class="attendance-table__cell">55.5</td>
+                                    <td class="attendance-table__cell">53</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Saparboyev Shoxruh</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell">51</td>
+                                    <td class="attendance-table__cell">47.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-3.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Madaminov Javohir</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell">47</td>
+                                    <td class="attendance-table__cell">42.5</td>
+                                    <td class="attendance-table__cell">47.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Bahtiyorov Maxmudbek</td>
+                                    <td class="attendance-table__cell">61.25</td>
+                                    <td class="attendance-table__cell">30</td>
+                                    <td class="attendance-table__cell">46</td>
+                                    <td class="attendance-table__cell">43.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Maxsudbekov Muxammadali</td>
+                                    <td class="attendance-table__cell">38</td>
+                                    <td class="attendance-table__cell">31</td>
+                                    <td class="attendance-table__cell">36</td>
+                                    <td class="attendance-table__cell">37.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+1.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Yuldashev Javohir</td>
+                                    <td class="attendance-table__cell">73.75</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell">74.5</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Sharipov Elbek</td>
+                                    <td class="attendance-table__cell">62.5</td>
+                                    <td class="attendance-table__cell">37</td>
+                                    <td class="attendance-table__cell">59.5</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 1</td>
+                                    <td class="attendance-table__cell">Qurbonboyev Islombek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">37</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                </tr>
+
+                                <!-- CEFR 2-GURUH -->
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Shixnazarova Jasmina</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">59</td>
+                                    <td class="attendance-table__cell">-</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Sharipova Ziynat</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell">77</td>
+                                    <td class="attendance-table__cell">55.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-22</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Jumabayev Sunnatbek</td>
+                                    <td class="attendance-table__cell">54</td>
+                                    <td class="attendance-table__cell">61</td>
+                                    <td class="attendance-table__cell">50</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-2</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Bahadirova Sayyora</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">70</td>
+                                    <td class="attendance-table__cell">74</td>
+                                    <td class="attendance-table__cell">47.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-27</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Karimboyev Elxon</td>
+                                    <td class="attendance-table__cell">72</td>
+                                    <td class="attendance-table__cell">75</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">47</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-21</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Shokirov Mustafo</td>
+                                    <td class="attendance-table__cell">48</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">45.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-23</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Iskandarova Dilnoza</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">54</td>
+                                    <td class="attendance-table__cell">51</td>
+                                    <td class="attendance-table__cell">38.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-13</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">CEFR 2</td>
+                                    <td class="attendance-table__cell">Atanazarova Jasmina</td>
+                                    <td class="attendance-table__cell">94</td>
+                                    <td class="attendance-table__cell">69</td>
+                                    <td class="attendance-table__cell">51</td>
+                                    <td class="attendance-table__cell">35.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-16</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div>
+                        <h1 class="assessments__title">IELTS</h1>
+                        <table class="attendance-table" oncopy="return false;">
+                            <thead class="attendance-table__head">
+                                <tr class="attendance-table__row attendance-table__row--header">
+                                    <th class="attendance-table__cell">Группа</th>
+                                    <th class="attendance-table__cell">Имя</th>
+                                    <th class="attendance-table__cell">Ноябрь</th>
+                                    <th class="attendance-table__cell">Декабрь</th>
+                                    <th class="attendance-table__cell">Январь</th>
+                                    <th class="attendance-table__cell">Февраль</th>
+                                    <th class="attendance-table__cell">+/-</th>
+                                </tr>
+                            </thead>
+                            <tbody class="attendance-table__body">
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Odamboyev Islombek Fazil o'g'li</td>
+                                    <td class="attendance-table__cell">87.05</td>
+                                    <td class="attendance-table__cell">97</td>
+                                    <td class="attendance-table__cell">93</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Tazirov Jahongir Jamshid Ogli</td>
+                                    <td class="attendance-table__cell">57.5</td>
+                                    <td class="attendance-table__cell">66</td>
+                                    <td class="attendance-table__cell">81.5</td>
+                                    <td class="attendance-table__cell">88.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+7</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Rahimboyev Xushnudbek</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">80.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+20.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Batiyorova Tabassum Erkinboy qizi</td>
+                                    <td class="attendance-table__cell">80</td>
+                                    <td class="attendance-table__cell">81</td>
+                                    <td class="attendance-table__cell">72.5</td>
+                                    <td class="attendance-table__cell">69.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-3</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Muhametova Mushtariy Akbarjonovna</td>
+                                    <td class="attendance-table__cell">86.25</td>
+                                    <td class="attendance-table__cell">82</td>
+                                    <td class="attendance-table__cell">71</td>
+                                    <td class="attendance-table__cell">69.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-1.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Alaberganov Sherzodbek</td>
+                                    <td class="attendance-table__cell">73.75</td>
+                                    <td class="attendance-table__cell">32</td>
+                                    <td class="attendance-table__cell">35</td>
+                                    <td class="attendance-table__cell">69</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+34</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Ravshanbekov Firdavs</td>
+                                    <td class="attendance-table__cell">88</td>
+                                    <td class="attendance-table__cell">65</td>
+                                    <td class="attendance-table__cell">51.5</td>
+                                    <td class="attendance-table__cell">66</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+14.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Muhametov Akrombek Akbarjon o'g'li</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">68</td>
+                                    <td class="attendance-table__cell">60</td>
+                                    <td class="attendance-table__cell">64.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+4.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Muhametova Nozima Akbarjon qizi</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">58</td>
+                                    <td class="attendance-table__cell">69</td>
+                                    <td class="attendance-table__cell">61</td>
+                                    <td class="attendance-table__cell attendance-table__cell--minus">-8</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Ruzeimova Parizoda Shohrat qizi</td>
+                                    <td class="attendance-table__cell">71.25</td>
+                                    <td class="attendance-table__cell">56</td>
+                                    <td class="attendance-table__cell">54</td>
+                                    <td class="attendance-table__cell">59.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+5.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Markov Shojaon</td>
+                                    <td class="attendance-table__cell">-</td>
+                                    <td class="attendance-table__cell">42</td>
+                                    <td class="attendance-table__cell">48.5</td>
+                                    <td class="attendance-table__cell">55</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+6.5</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Ozodboyev Diyorbek Shokir o'g'li</td>
+                                    <td class="attendance-table__cell">76.25</td>
+                                    <td class="attendance-table__cell">47</td>
+                                    <td class="attendance-table__cell">38.5</td>
+                                    <td class="attendance-table__cell">49.5</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+11</td>
+                                </tr>
+                                <tr class="attendance-table__row">
+                                    <td class="attendance-table__cell">IELTS</td>
+                                    <td class="attendance-table__cell">Madaminov Maqsad</td>
+                                    <td class="attendance-table__cell">57</td>
+                                    <td class="attendance-table__cell">46</td>
+                                    <td class="attendance-table__cell">41</td>
+                                    <td class="attendance-table__cell">42</td>
+                                    <td class="attendance-table__cell attendance-table__cell--plus">+1</td>
+                                </tr>
+
+                            </tbody>
+                        </table>
+                         <img class="assessments__img" height="360" width="524" src="/imgs/minister.xurcode.jpg"
+                            alt="anglish">
+                    </div>
+                </div>
 
             </div>
         </section>
     </main>
+    
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -729,8 +1761,8 @@
                 </p>
 
                 <nav class="footer__nav">
-                    <a href="#" class="footer__link">Расписаний</a>
-                    <a href="#" class="footer__link">Оценки</a>
+                    <a href="#" class="footer__link">Домой</a>
+                    <a href="#" class="footer__link">Мониторинг</a>
                     <a href="#" class="footer__link">Подкурсы</a>
                 </nav>
 

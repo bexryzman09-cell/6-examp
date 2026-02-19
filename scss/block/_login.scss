@@ -14,7 +14,7 @@
      flex-direction: column;
      justify-content: center;
      align-items: center;
-     
+
  }
 
 
@@ -34,12 +34,13 @@
      color: lab(38.4988% -58.7734 74.4224);
  }
 
- 
- .login__span{
-    color: #000;
-    font-weight: 400;
+
+ .login__span {
+     color: #000;
+     font-weight: 400;
  }
-  .login__description {
+
+ .login__description {
      text-align: justify;
      padding-bottom: 30px;
  }
@@ -94,6 +95,7 @@
 
  .login__password__icont {
      color: #000;
+     cursor: pointer;
  }
 
  .login__button {
@@ -112,5 +114,12 @@
      font-family: "Oswald", sans-serif;
      font-size: 15px;
      cursor: pointer;
- }
+     transition: 0.7s;
 
+     &:hover {
+         transform: scale(1.04);
+         background: #fff;
+         border: 3px solid lab(38.4988% -58.7734 74.4224);
+         color: lab(38.4988% -58.7734 74.4224);
+     }
+ }

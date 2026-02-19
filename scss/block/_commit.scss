@@ -1,0 +1,92 @@
+.commit__container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.commit__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 500px;
+    padding: 20px;
+    background-color: rgba(0, 128, 0, 0.139);
+    width: 100%;
+    border-radius: 15px;
+    min-width: 285px;
+
+}
+
+// .commit__info {}
+
+// .commit__title {}
+
+.commit__text {
+    text-align: center;
+}
+.commit__title--span{
+        font-weight: 400;
+}
+
+.commit__label {
+    display: flex;
+    flex-direction: column;
+}
+
+.commit__span {
+    font-family: "Oswald", sans-serif;
+
+    padding: 10px 0;
+
+}
+
+.commit__select {
+    max-width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #3a9f1e32;
+    border: none;
+    outline: none;
+}
+
+.sommit__option {
+    font-family: "Oswald", sans-serif;
+    font-size: 18px;
+}
+
+.commit__textarea {
+    max-width: 200px;
+    padding: 8px;
+    border-radius: 10px;
+    background-color: #3a9f1e32;
+    border: none;
+    outline: none;
+    resize: vertical;
+    margin-bottom: 20px;
+
+    &::placeholder {
+        padding-left: 5px;
+        font-size: 16px;
+    }
+}
+
+.commit__btn {
+    max-width: 200px;
+    width: 100%;
+    padding: 5px 0;
+    border-radius: 10px;
+    border: none;
+    font-family: "Oswald", sans-serif;
+    background-color: #3a9f1e32;
+    transition: 0.7s;
+
+    &:hover {
+        transform: scale(1.01);
+        background-color: transparent;
+        font-size: 16px;
+        border: 4px solid #3a9f1e32;
+        color: #000;
+    }
+}

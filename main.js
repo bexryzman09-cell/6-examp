@@ -1,22 +1,32 @@
 
+
 let login__form = document.querySelector(".login__form")
 let login__user = document.querySelector(".login__user")
 let login__password = document.querySelector(".login__password")
 
-form.addEventListener("login__button", (e) => {
+login__form.addEventListener("submit", (e) => {
     e.preventDefault();
-    console.log(login__user, login__password)
-    let name = (login__user, login__password)
+
+    let name = login__user.value;
     let password = login__password.value;
 
-   
-    if (name === 'Bexryzbek' && password === '2009') {
+
+    if (name == 'Bexruzbek' && password == '2009') {
         alert('Вход выполнен успешна');
-        window.location.href = "smth.html"
+        window.location.href = "index.html"
     }
     else {
         alert("Неверный пароль или логин")
     }
 })
 
+function togglePass() {
+    let obj = document.getElementById('password__eye');
 
+    if (obj.type == 'password') {
+        obj.type = 'text';
+    }
+    else {
+        obj.type = 'password';
+    }
+} 

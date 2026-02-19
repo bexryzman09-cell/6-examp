@@ -1,7 +1,8 @@
     .hero__class {
         text-align: center;
         color: lab(38.4988% -58.7734 74.4224);
-        padding-bottom: 20;
+        padding-bottom: 30px;
+
     }
 
     .hero__content {
@@ -15,13 +16,17 @@
         gap: 30px;
         overflow-x: auto;
         padding-bottom: 10px;
-        max-width: 600px;
+        max-width: 1440px;
         width: 100%;
         padding-bottom: 35px;
         margin-bottom: 20px;
         padding: 20px 10px;
-       border-radius: 20px;
-        background: lab(39.47% -46.09 44.48 / 0.037);    
+        border-radius: 20px;
+        background: lab(39.47% -46.09 44.48 / 0.037);
+
+        &::-webkit-scrollbar{
+              overflow: hidden;
+        }
     }
 
     .hero__list {

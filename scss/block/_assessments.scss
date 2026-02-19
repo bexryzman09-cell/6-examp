@@ -1,23 +1,58 @@
- .attendance-table {
-    padding-bottom: 30px;
- }
+.container--assessments {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 50px;
 
-// .attendance-table__head {}
+}
 
-  .attendance-table__row {
-    background: #19690031;
-  }
+.attendance-table__head {
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.attendance-table__row {
+  text-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  background: #19690031;
+}
 
 // .attendance-table__row--header {}
 
 .attendance-table__cell {
-    text-align: center;
-}
-.attendance-table__cell--minus{
-    background: #ff0404;
-}
-.attendance-table__cell--plus{
-    background: #0dc000;
+  text-align: center;
+  padding: 3px;
+  user-select: none;
 }
 
-// .attendance-table__body {}
+.attendance-table__cell--minus {
+  background: #ff0404;
+  padding: 3px;
+}
+
+.attendance-table__cell--plus {
+  background: #0dc000;
+  padding: 3px;
+}
+
+
+.assessments__title {
+  font-size: 40px;
+  text-align: center;
+}
+
+.assesssments__wraper {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.assessments__img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20px;
+
+}
