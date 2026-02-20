@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Assessments</title>
     <link rel="stylesheet" href="css/main.css">
-     <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -21,10 +21,10 @@
                 <img class="logo" width="40" height="40" src="/imgs/logo.jpg" alt="logo">
                 <nav class="header__nav">
 
-                    <a target="_blank" href="#" class="header__link">Домой</a>
-                    <a target="_blank" href="#" class="header__link">Расписаний</a>
-                    <a target="_blank" href="#" class="header__link">Оценки</a>
-                    <a target="_blank" href="#" class="header__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="header__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="header__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="header__link">Подкурсы</a>
+
                 </nav>
 
                 <a href="#profile__modal" class="header__profile-btn">
@@ -50,8 +50,8 @@
                 <div id="profile__modal" class="modal">
                     <div class="modal__contant">
                         <a href="#" class="modal__close">X</a>
-                        <a class="modal__link" href="">Профиль</a>
-                         <a class="modal__link" href="">Коментарии</a>
+                        <a target="_blank" class="modal__link" href="#settings.html">Профиль</a>
+                        <a target="_blank" class="modal__link" href="http://127.0.0.1:5500/commit.html">Коментарии</a>
                     </div>
                 </div>
 
@@ -59,10 +59,17 @@
         </div>
     </header>
     <main>
+        <span class="error__span">
+            <svg class="error__icont" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                <title>Error SVG Icon</title>
+                <path fill="currentColor"
+                    d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467zM13 18h-2v-2h2zm-2-4V9h2l.001 5z" />
+            </svg>
+        </span>
         <section class="assessments">
             <div class="container container--assessments ">
                 <div class="assessments__wraper">
-                    <div>
+                    <div class="">
                         <h1 class="assessments__title">Математика</h1>
                         <table class="attendance-table">
                             <thead class="attendance-table__head">
@@ -813,7 +820,7 @@
                         </table>
                     </div>
                     <div>
-                        <h1 class="assessments__title" >ELEMENNTARY</h1>
+                        <h1 class="assessments__title">ELEMENNTARY</h1>
                         <table class="attendance-table" oncopy="return false;">
 
                             <thead class="attendance-table__head">
@@ -1736,7 +1743,7 @@
 
                             </tbody>
                         </table>
-                         <img class="assessments__img" height="360" width="524" src="/imgs/minister.xurcode.jpg"
+                        <img class="assessments__img" height="445" width="567" src="/imgs/logo__table.png"
                             alt="anglish">
                     </div>
                 </div>
@@ -1744,7 +1751,7 @@
             </div>
         </section>
     </main>
-    
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -1761,9 +1768,9 @@
                 </p>
 
                 <nav class="footer__nav">
-                    <a href="#" class="footer__link">Домой</a>
-                    <a href="#" class="footer__link">Мониторинг</a>
-                    <a href="#" class="footer__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="footer__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="footer__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="footer__link">Подкурсы</a>
                 </nav>
 
                 <div class="footer__bottom">

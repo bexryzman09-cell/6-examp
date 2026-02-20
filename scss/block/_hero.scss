@@ -63,6 +63,17 @@
     text-decoration: none;
 }
 
+.error__span {
+    display: none;
+}
+
+.error__icont {
+    color: rgb(239, 8, 8);
+    display: none;
+}
+
+
+
 @media only screen and (min-width:320px) {
     .hero__title {
         font-size: 23px;
@@ -81,4 +92,21 @@
     .hero__schedule-title {
         font-size: 25px;
     }
+}
+
+@media only screen and (max-width:319px){
+    .error__span{
+        display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 50px;
+    }
+    .error__icont {
+    color: rgb(239, 8, 8);
+    display: block;
+}
+.hero{
+    display: none;
+}
 }

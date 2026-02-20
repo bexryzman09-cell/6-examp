@@ -15,6 +15,7 @@
 </head>
 
 <body>
+
     <header class="header">
         <div class="container">
             <div class="header___content">
@@ -49,9 +50,19 @@
                 <!-- модалка -->
                 <div id="profile__modal" class="modal">
                     <div class="modal__contant">
-                        <a target="_blank" href="#" class="modal__close">X</a>
-                        <a target="_blank" class="modal__link" href="">Профиль</a>
+                        <a href="#" class="modal__close">X</a>
+                        <a target="_blank" class="modal__link" href="#settings.html">Профиль</a>
                         <a target="_blank" class="modal__link" href="http://127.0.0.1:5500/commit.html">Коментарии</a>
+                        <div class="modal__survey">
+                            <a target="_blank" class="modal__link"
+                                href="http://127.0.0.1:5500/commit.html"><cite>Опрос</cite></a><sup
+                                class="modal__sup"><cite>Скоро</cite></sup>
+                        </div>
+                        <div class="modal__survey">
+                            <a target="_blank" class="modal__link"
+                                href="http://127.0.0.1:5500/commit.html"><cite>Ежедневный задания</cite></a><sup
+                                class="modal__sup"><cite>Скоро</cite></sup>
+                        </div>
                     </div>
                 </div>
 
@@ -60,12 +71,17 @@
     </header>
 
     <main class="main">
+        <span class="error__span">
+            <svg class="error__icont" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                <title>Error SVG Icon</title>
+                <path fill="currentColor"
+                    d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467zM13 18h-2v-2h2zm-2-4V9h2l.001 5z" />
+            </svg>
+        </span>
         <section class="hero">
+
             <div class="container">
                 <div class="hero__content">
-
-
-
                     <div class="hero__schedule">
                         <h1 class="hero__title">
                             Добро пожаловать в <br><span class="hero__title--span">
@@ -89,33 +105,67 @@
                                     href="http://127.0.0.1:5500/html/schedules_two_B.html" class="classes__link">2 Б</a>
                             </li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">3 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">3 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_three_A.html" class="classes__link">3
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_three_B.html" class="classes__link">3
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">4 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">4 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_four_A.html" class="classes__link">4
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_four_B.html" class="classes__link">4
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">5 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">5 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_five_A.html" class="classes__link">5
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_five_B.html" class="classes__link">5
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">6 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">6 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_six_A.html" class="classes__link">6 А</a>
+                            </li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_six_B.html" class="classes__link">6 Б</a>
+                            </li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">7 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">7 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_seven_A.html" class="classes__link">7
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_seven_B.html" class="classes__link">7
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a target="_blank" href="http://127.0.0.1:5500/schedules.html"
-                                    class="classes__link">8 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">8 Б</a></li>
+                            <li class="classes__item"> <a target="_blank" target="_blank"
+                                    href="http://127.0.0.1:5500/schedules.html" class="classes__link">8 А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_eight_B.html" class="classes__link">8
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">9 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">9 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_nine_A.html" class="classes__link">9
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_nine_B.html" class="classes__link">9
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">10 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">10 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_ten_A.html" class="classes__link">10
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_ten_B.html" class="classes__link">10
+                                    Б</a></li>
 
-                            <li class="classes__item"> <a href="#" class="classes__link">11 А</a></li>
-                            <li class="classes__item"><a href="#" class="classes__link">11 Б</a></li>
+                            <li class="classes__item"> <a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_eleven_A.html" class="classes__link">11
+                                    А</a></li>
+                            <li class="classes__item"><a target="_blank"
+                                    href="http://127.0.0.1:5500/html/schedules_eleven_B.html   "
+                                    class="classes__link">11 Б</a></li>
                         </ul>
 
                     </div>
@@ -142,9 +192,31 @@
                 </p>
 
                 <nav class="footer__nav">
-                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="footer__link">Домой</a>
-                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="footer__link">Мониторинг</a>
-                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="footer__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="footer__link"><svg
+                            class="footer__link--icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24">
+                            <title>Home-alt1 SVG Icon</title>
+                            <g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                stroke-width="2">
+                                <path
+                                    d="M21 19v-6.733a4 4 0 0 0-1.245-2.9L13.378 3.31a2 2 0 0 0-2.755 0L4.245 9.367A4 4 0 0 0 3 12.267V19a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2" />
+                                <path d="M9 15a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v6H9z" />
+                            </g>
+                        </svg></a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="footer__link"><svg
+                            class="footer__link--icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24">
+                            <title>Monitoring-rounded SVG Icon</title>
+                            <path fill="currentColor"
+                                d="M4 21q-.425 0-.712-.288T3 20v-1q0-.425.288-.712T4 18t.713.288T5 19v1q0 .425-.288.713T4 21m4 0q-.425 0-.712-.288T7 20v-5.5q0-.425.288-.712T8 13.5t.713.288T9 14.5V20q0 .425-.288.713T8 21m4 0q-.425 0-.712-.288T11 20v-3.5q0-.425.288-.712T12 15.5t.713.288t.287.712V20q0 .425-.288.713T12 21m4 0q-.425 0-.712-.288T15 20v-5q0-.425.288-.712T16 14t.713.288T17 15v5q0 .425-.288.713T16 21m4 0q-.425 0-.712-.288T19 20v-9q0-.425.288-.712T20 10t.713.288T21 11v9q0 .425-.288.713T20 21m-6-9.025q-.4 0-.763-.15t-.662-.425L10 8.825l-5.3 5.3q-.3.3-.712.288t-.713-.313q-.275-.3-.262-.712T3.3 12.7l5.275-5.275q.3-.3.663-.437T10 6.85t.775.138t.65.437L14 10l5.3-5.3q.3-.3.713-.288t.712.313q.275.3.263.713t-.288.687L15.425 11.4q-.275.275-.65.425t-.775.15" />
+                        </svg></a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="footer__link"><svg
+                            class="footer__link--icon" xmlns="http://www.w3.org/2000/svg" width="40" height="40"
+                            viewBox="0 0 24 24">
+                            <title>Baseline-school SVG Icon</title>
+                            <path fill="currentColor"
+                                d="M5 13.18v4L12 21l7-3.82v-4L12 17zM12 3L1 9l11 6l9-4.91V17h2V9z" />
+                        </svg></a>
                 </nav>
 
                 <div class="footer__bottom">

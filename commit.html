@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Comnter</title>
     <link rel="stylesheet" href="css/main.css">
-     <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
@@ -15,16 +15,16 @@
 </head>
 
 <body>
-   <header class="header">
+    <header class="header">
         <div class="container">
             <div class="header___content">
                 <img class="logo" width="40" height="40" src="/imgs/logo.jpg" alt="logo">
                 <nav class="header__nav">
 
-                    <a target="_blank" href="#" class="header__link">Домой</a>
-                    <a target="_blank" href="#" class="header__link">Расписаний</a>
-                    <a target="_blank" href="#" class="header__link">Оценки</a>
-                    <a target="_blank" href="#" class="header__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="header__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="header__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="header__link">Подкурсы</a>
+
                 </nav>
 
                 <a href="#profile__modal" class="header__profile-btn">
@@ -44,14 +44,16 @@
                             <path fill="#BB1D80"
                                 d="M16 23.106c-.537.539-1.457.894-2.5.894c-1.032 0-1.942-.347-2.482-.876c.12.724.928 4.376 4.982 4.376s4.861-3.652 4.982-4.376c-.54.529-1.45.876-2.482.876c-1.044 0-1.963-.355-2.5-.894" />
                         </g>
-                    </svg> 
+                    </svg>
                 </a>
                 <!-- модалка -->
                 <div id="profile__modal" class="modal">
                     <div class="modal__contant">
                         <a href="#" class="modal__close">X</a>
-                        <a class="modal__link" href="">Профиль</a>
-                         <a class="modal__link" href="">Коментарии</a>
+                        <a target="_blank" class="modal__link" href="#settings.html">Профиль</a>
+                        <a target="_blank" class="modal__link" href="http://127.0.0.1:5500/commit.html">Коментарии</a>
+
+
                     </div>
                 </div>
 
@@ -59,6 +61,13 @@
         </div>
     </header>
     <main>
+        <span class="error__span">
+            <svg class="error__icont" xmlns="http://www.w3.org/2000/svg" width="70" height="70" viewBox="0 0 24 24">
+                <title>Error SVG Icon</title>
+                <path fill="currentColor"
+                    d="M12.884 2.532c-.346-.654-1.422-.654-1.768 0l-9 17A.999.999 0 0 0 3 21h18a.998.998 0 0 0 .883-1.467zM13 18h-2v-2h2zm-2-4V9h2l.001 5z" />
+            </svg>
+        </span>
         <section>
             <div class="container commit__container">
                 <div class="commit__content">
@@ -81,15 +90,16 @@
                             <span class="commit__span">Коминтариий</span>
                             <textarea class="commit__textarea" placeholder="commit" name="" id=""></textarea>
                         </label>
-                        <button type="submit" class="commit__btn">
+                        <button type="button" class="commit__btn">
                             send
+                            </svg>
                         </button>
                     </form>
                 </div>
             </div>
         </section>
     </main>
-   
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -161,6 +171,8 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+    <script src="commit.js"></script>
 </body>
 
 </html>

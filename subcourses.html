@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>subcourses</title>
-     <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
+    <link rel="shortcut icon" href="./imgs/logo.jpg" type="image/x-icon">
     <link rel="stylesheet" href="css/main.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -15,16 +15,16 @@
 </head>
 
 <body>
-    <header class="header"> 
+    <header class="header">
         <div class="container">
             <div class="header___content">
                 <img class="logo" width="40" height="40" src="/imgs/logo.jpg" alt="logo">
                 <nav class="header__nav">
 
-                    <a target="_blank" href="#" class="header__link">Домой</a>
-                    <a target="_blank" href="#" class="header__link">Расписаний</a>
-                    <a target="_blank" href="#" class="header__link">Оценки</a>
-                    <a target="_blank" href="#" class="header__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="header__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="header__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="header__link">Подкурсы</a>
+
                 </nav>
 
                 <a href="#profile__modal" class="header__profile-btn">
@@ -50,8 +50,8 @@
                 <div id="profile__modal" class="modal">
                     <div class="modal__contant">
                         <a href="#" class="modal__close">X</a>
-                        <a class="modal__link" href="">Профиль</a>
-                        <a class="modal__link" href="">Коментарии</a>
+                        <a target="_blank" class="modal__link" href="#settings.html">Профиль</a>
+                        <a target="_blank" class="modal__link" href="http://127.0.0.1:5500/commit.html">Коментарии</a>
                     </div>
                 </div>
 
@@ -149,8 +149,29 @@
 
                     </div>
                 </div>
+                <ul class="subcourses">
+    <li class="subcourses__item">
+        <img class="subcourses__image" height="300" width="" src="/imgs/english.leslons.jpg" alt="English course">
+        <h1 class="subcourses__title">Подкурс по английскому языку</h1>
+        <p class="subcourses__text">
+            English subcourse helps students improve speaking, reading, writing, and listening skills.
+            During lessons, students learn new vocabulary, practice grammar, and communicate in
+            real-life situations. The course prepares learners for exams and future opportunities.
+            Our goal is to make English learning easy, interesting, and effective for everyone.
+        </p>
+    </li>
 
-
+    <li class="subcourses__item">
+        <img class="subcourses__image" height="300" width="300" src="/imgs/german.leseon.jpg" alt="German course">
+        <h1 class="subcourses__title">Подкурс по немецкому языку</h1>
+        <p class="subcourses__text">
+            Подкурс по немецкому языку помогает ученикам изучить основы грамматики, расширить словарный
+            запас и развить разговорные навыки. На занятиях мы читаем тексты, слушаем аудио и практикуем
+            диалоги. Курс подходит для начинающих и помогает уверенно использовать немецкий язык в учёбе
+            и повседневной жизни.
+        </p>
+    </li>
+</ul>
 
 
             </div>
@@ -159,7 +180,7 @@
 
         </section>
     </main>
-   
+
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -176,9 +197,9 @@
                 </p>
 
                 <nav class="footer__nav">
-                    <a href="#" class="footer__link">Домой</a>
-                    <a href="#" class="footer__link">Мониторинг</a>
-                    <a href="#" class="footer__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="footer__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="footer__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="footer__link">Подкурсы</a>
                 </nav>
 
                 <div class="footer__bottom">

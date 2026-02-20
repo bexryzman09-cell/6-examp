@@ -26,12 +26,15 @@
 .commit__text {
     text-align: center;
 }
-.commit__title--span{
-        font-weight: 400;
+
+.commit__title--span {
+    font-weight: 400;
 }
 
 .commit__label {
     display: flex;
+    max-width: 500px;
+    width: 100%;
     flex-direction: column;
 }
 
@@ -57,7 +60,8 @@
 }
 
 .commit__textarea {
-    max-width: 200px;
+    max-width: 500px;
+    width: 100%;
     padding: 8px;
     border-radius: 10px;
     background-color: #3a9f1e32;
@@ -81,6 +85,7 @@
     font-family: "Oswald", sans-serif;
     background-color: #3a9f1e32;
     transition: 0.7s;
+    cursor: pointer;
 
     &:hover {
         transform: scale(1.01);

@@ -74,24 +74,29 @@
     }
 }
 
+.footer__link--icon {
+    color: #ffffff;
+}
+
 @media only screen and (min-width:320px) {
     .footer__nav {
+        display: flex;
         position: fixed;
         bottom: 0;
         z-index: 100;
+        padding: 5px 0;
         left: 0;
         background-color: rgba(0, 128, 0, 0.442);
         right: 0;
         margin: 0 auto;
         align-items: center;
-        display: flex;
         justify-content: center;
         width: 100%;
         border-radius: 7px 7px 0 0;
         max-width: 1200px;
         min-width: 285px;
         width: 100%;
-        gap: 10px;
+        gap: 50px;
     }
 
     .footer__link {
@@ -105,6 +110,12 @@
 
 @media only screen and (min-width:600px) {
     .footer__nav {
+        display: none;
+    }
+}
+
+@media only screen and (max-width:319px) {
+    .footer {
         display: none;
     }
 }

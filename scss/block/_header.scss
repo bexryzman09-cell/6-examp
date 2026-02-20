@@ -107,6 +107,20 @@
     text-decoration: none;
     font-family: "Oswald", sans-serif;
     font-size: 20px;
+    transition: 0.7s;
+
+    &:hover {
+        color: lab(38.4988% -58.7734 74.4224);
+    }
+}
+
+
+
+
+.modal__sup {
+    color: #d97d04;
+    font-size: 10px;
+    font-weight: 600;
 }
 
 @media only screen and (min-width:320px) {
@@ -120,5 +134,11 @@
         display: block;
         gap: 50px;
         display: flex;
+    }
+}
+
+@media only screen and (max-width:319px) {
+    .header {
+        display: none;
     }
 }

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,6 +13,7 @@
         rel="stylesheet">
 
 </head>
+
 <body>
     <header class="header">
         <div class="container">
@@ -19,10 +21,10 @@
                 <img class="logo" width="40" height="40" src="/imgs/logo.jpg" alt="logo">
                 <nav class="header__nav">
 
-                    <a target="_blank" href="#" class="header__link">Домой</a>
-                    <a target="_blank" href="#" class="header__link">Расписаний</a>
-                    <a target="_blank" href="#" class="header__link">Оценки</a>
-                    <a target="_blank" href="#" class="header__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="header__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="header__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="header__link">Подкурсы</a>
+
                 </nav>
 
                 <a href="#profile__modal" class="header__profile-btn">
@@ -47,336 +49,331 @@
                 <!-- модалка -->
                 <div id="profile__modal" class="modal">
                     <div class="modal__contant">
-                        <a href="#" class="modal__close">X</a>
-                        <a class="modal__link" href="">Профиль</a>
-                         <a class="modal__link" href="">Коментарии</a>
+                        <a target="_blank" href="#" class="modal__close">X</a>
+                        <a target="_blank" class="modal__link" href="#settings.html">Профиль</a>
+                        <a target="_blank" class="modal__link" href="http://127.0.0.1:5500/commit.html">Коментарии</a>
                     </div>
                 </div>
 
             </div>
         </div>
     </header>
-        <main>
-            <section>
-                <div class="container">
-                    <h2 class="hero__class">3-A</h2>
-                    <div class="hero__content">
-                        <div class="hero__content--ul">
-                            <ul class="hero__list">
-                                <h1 class="hero__text">Понедельник</h1>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">1</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
+    <main>
+        <section>
+            <div class="container">
+                <h2 class="hero__class">3-A</h2>
+                <div class="hero__content">
+                    <div class="hero__content--ul">
+                        <!-- 3А КЛАСС (русский) -->
+                        
+                        <!-- Понедельник -->
+                        <ul class="hero__list">
+                            <h1 class="hero__text">Понедельник</h1>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">1</strong>
+                                    <h3 class="hero__lesson-name">Русский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">2</strong>
+                                    <h3 class="hero__lesson-name">Математика</h3>
+                                </span>
+                                <p class="hero__teacher">Петрова А.С.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">3</strong>
+                                    <h3 class="hero__lesson-name">Чтение</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">4</strong>
+                                    <h3 class="hero__lesson-name">Физкультура</h3>
+                                </span>
+                                <p class="hero__teacher">Сидоров В.П.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">5</strong>
+                                    <h3 class="hero__lesson-name">Музыка</h3>
+                                </span>
+                                <p class="hero__teacher">Ноткина Л.М.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">6</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">7</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">8</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                        </ul>
+                        <!-- Вторник -->
+                        <ul class="hero__list">
+                            <h1 class="hero__text">Вторник</h1>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">1</strong>
+                                    <h3 class="hero__lesson-name">Математика</h3>
+                                </span>
+                                <p class="hero__teacher">Петрова А.С.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">2</strong>
+                                    <h3 class="hero__lesson-name">Русский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">3</strong>
+                                    <h3 class="hero__lesson-name">Окружающий мир</h3>
+                                </span>
+                                <p class="hero__teacher">Смирнова Е.В.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">4</strong>
+                                    <h3 class="hero__lesson-name">Английский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Бехрузбек.М.А</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">5</strong>
+                                    <h3 class="hero__lesson-name">ИЗО</h3>
+                                </span>
+                                <p class="hero__teacher">Краскина Н.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">6</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">7</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">8</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                        </ul>
+                        <!-- Среда -->
+                        <ul class="hero__list">
+                            <h1 class="hero__text">Среда</h1>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">1</strong>
+                                    <h3 class="hero__lesson-name">Русский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">2</strong>
+                                    <h3 class="hero__lesson-name">Математика</h3>
+                                </span>
+                                <p class="hero__teacher">Петрова А.С.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">3</strong>
+                                    <h3 class="hero__lesson-name">Чтение</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">4</strong>
+                                    <h3 class="hero__lesson-name">Физкультура</h3>
+                                </span>
+                                <p class="hero__teacher">Сидоров В.П.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">5</strong>
+                                    <h3 class="hero__lesson-name">Технология</h3>
+                                </span>
+                                <p class="hero__teacher">Ручкина Т.М.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">6</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">7</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">8</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                        </ul>
+                        <!-- Четверг -->
+                        <ul class="hero__list">
+                            <h1 class="hero__text">Четверг</h1>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">1</strong>
+                                    <h3 class="hero__lesson-name">Математика</h3>
+                                </span>
+                                <p class="hero__teacher">Петрова А.С.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">2</strong>
+                                    <h3 class="hero__lesson-name">Русский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">3</strong>
+                                    <h3 class="hero__lesson-name">Английский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Бехрузбек.М.А</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">4</strong>
+                                    <h3 class="hero__lesson-name">Окружающий мир</h3>
+                                </span>
+                                <p class="hero__teacher">Смирнова Е.В.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">5</strong>
+                                    <h3 class="hero__lesson-name">Музыка</h3>
+                                </span>
+                                <p class="hero__teacher">Ноткина Л.М.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">6</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">7</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">8</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                        </ul>
+                        <!-- Пятница -->
+                        <ul class="hero__list">
+                            <h1 class="hero__text">Пятница</h1>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">1</strong>
+                                    <h3 class="hero__lesson-name">Чтение</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">2</strong>
+                                    <h3 class="hero__lesson-name">Русский язык</h3>
+                                </span>
+                                <p class="hero__teacher">Иванова М.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">3</strong>
+                                    <h3 class="hero__lesson-name">Математика</h3>
+                                </span>
+                                <p class="hero__teacher">Петрова А.С.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">4</strong>
+                                    <h3 class="hero__lesson-name">Физкультура</h3>
+                                </span>
+                                <p class="hero__teacher">Сидоров В.П.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">5</strong>
+                                    <h3 class="hero__lesson-name">ИЗО</h3>
+                                </span>
+                                <p class="hero__teacher">Краскина Н.И.</p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">6</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">7</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                            <li class="hero__item">
+                                <span class="hero__lesson-info">
+                                    <strong class="hero__lesson-number">8</strong>
+                                    <h3 class="hero__lesson-name"></h3>
+                                </span>
+                                <p class="hero__teacher"></p>
+                            </li>
+                        </ul>
 
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">2</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
+                       
 
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">3</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">4</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">5</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">6</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">7</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">8</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                            </ul>
-                            <ul class="hero__list">
-                                <h1 class="hero__text">Вторник</h1>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">1</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">2</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">3</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">4</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">5</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">6</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">7</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">8</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                            </ul>
-                            <ul class="hero__list">
-                                <h1 class="hero__text">Среда</h1>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">1</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">2</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">3</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">4</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">5</strong>
-                                        <h3 class="hero__lesson-name">История Узб</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">6</strong>
-                                        <h3 class="hero__lesson-name">Физика</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">7</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">8</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                            </ul>
-                            <ul class="hero__list">
-                                <h1 class="hero__text">Четверг</h1>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">1</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">2</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">3</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">4</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">5</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">6</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">7</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">8</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                            </ul>
-                            <ul class="hero__list">
-                                <h1 class="hero__text">Пятница</h1>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">1</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">2</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">3</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">4</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">5</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">6</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">7</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                                <li class="hero__item">
-                                    <span class="hero__lesson-info">
-                                        <strong class="hero__lesson-number">8</strong>
-                                        <h3 class="hero__lesson-name">Англиский язык</h3>
-                                    </span>
-                                    <p class="hero__teacher">Бехрузбек.М.А</p>
-                                </li>
-                            </ul>
-                        </div>
                     </div>
                 </div>
-            </section>
-        </main>
+            </div>
+        </section>
+    </main>
     <footer class="footer">
         <div class="container">
             <div class="footer__content">
@@ -393,9 +390,9 @@
                 </p>
 
                 <nav class="footer__nav">
-                    <a href="#" class="footer__link">Расписаний</a>
-                    <a href="#" class="footer__link">Оценки</a>
-                    <a href="#" class="footer__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="footer__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="footer__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="footer__link">Подкурсы</a>
                 </nav>
 
                 <div class="footer__bottom">
@@ -449,4 +446,5 @@
         </div>
     </footer>
 </body>
+
 </html>

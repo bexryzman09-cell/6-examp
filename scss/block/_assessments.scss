@@ -8,15 +8,23 @@
 }
 
 .attendance-table__head {
-  gap: 30px;
   flex-wrap: wrap;
+  max-width: 800px;
+  width: 100%;
 }
 
 .attendance-table__row {
   text-align: center;
   align-items: center;
   flex-wrap: wrap;
+
   background: #19690031;
+}
+
+.attendance-table {
+  max-width: 800px;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 // .attendance-table__row--header {}
@@ -45,6 +53,7 @@
 
 .assesssments__wraper {
   display: flex;
+  ;
   flex-wrap: wrap;
   gap: 50px;
 }
@@ -54,5 +63,38 @@
   justify-content: center;
   align-items: center;
   padding-top: 20px;
+  max-width: 567px;
+  width: 100%;
+}
 
+@media (max-width: 600px) {
+
+  table,
+  thead,
+  tbody,
+  th,
+  td,
+  tr {
+    display: block;
+  }
+
+  thead {
+    display: none;
+  }
+
+  tr {
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+  }
+
+  td {
+    display: flex;
+    justify-content: space-between;
+    padding: 5px 0;
+  }
+.assessments__img{
+  display: none;
+}
 }

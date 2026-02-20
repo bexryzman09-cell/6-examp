@@ -19,13 +19,14 @@
             <div class="header___content">
                 <img class="logo" width="40" height="40" src="/imgs/logo.jpg" alt="logo">
                 <nav class="header__nav">
-                    <a target="_blank" href="#" class="header__link">Домой</a>
-                    <a target="_blank" href="#" class="header__link">Расписаний</a>
-                    <a target="_blank" href="#" class="header__link">Оценки</a>
-                    <a target="_blank" href="#" class="header__link">Подкурсы</a>
+
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="header__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="header__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="header__link">Подкурсы</a>
+
                 </nav>
 
-                <button class="header__profile-btn">
+                <a href="#profile__modal" class="header__profile-btn">
                     <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
                         <title>Cat-face SVG Icon</title>
                         <g fill="none">
@@ -43,7 +44,16 @@
                                 d="M16 23.106c-.537.539-1.457.894-2.5.894c-1.032 0-1.942-.347-2.482-.876c.12.724.928 4.376 4.982 4.376s4.861-3.652 4.982-4.376c-.54.529-1.45.876-2.482.876c-1.044 0-1.963-.355-2.5-.894" />
                         </g>
                     </svg>
-                </button>
+                </a>
+                <!-- модалка -->
+                <div id="profile__modal" class="modal">
+                    <div class="modal__contant">
+                        <a target="_blank" href="#" class="modal__close">X</a>
+                        <a target="_blank" class="modal__link" href="#settings.html">Профиль</a>
+                        <a target="_blank" class="modal__link" href="http://127.0.0.1:5500/commit.html">Коментарии</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </header>
@@ -51,77 +61,307 @@
         <section>
             <div class="container">
                 <h2 class="hero__class">1-B</h2>
-                <div class="hero__content--ul">
-
-    <!-- ПОНЕДЕЛЬНИК -->
+              <div class="hero__content--ul">
+    <!-- Dushanba -->
     <ul class="hero__list">
-        <h1 class="hero__text">Понедельник</h1>
-
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">1</strong><h3 class="hero__lesson-name">Matematika</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">2</strong><h3 class="hero__lesson-name">Mental Arithmetic</h3></span><p class="hero__teacher">A.Marxabo</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">3</strong><h3 class="hero__lesson-name">Ingliz tili</h3></span><p class="hero__teacher">V.Nodira</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">4</strong><h3 class="hero__lesson-name">Robototexnika</h3></span><p class="hero__teacher">Y.Ravshan</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">5</strong><h3 class="hero__lesson-name">Yozuv</h3></span><p class="hero__teacher">Hadicha</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">6</strong><h3 class="hero__lesson-name">Matematika</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">7</strong><h3 class="hero__lesson-name">Alifbe</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">8</strong><h3 class="hero__lesson-name">Practicum</h3></span><p class="hero__teacher">B.Hadicha</p></li>
+        <h1 class="hero__text">Dushanba</h1>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">1</strong>
+                <h3 class="hero__lesson-name">Ona tili</h3>
+            </span>
+            <p class="hero__teacher">Rustamova M.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">2</strong>
+                <h3 class="hero__lesson-name">Adabiyot</h3>
+            </span>
+            <p class="hero__teacher">Rustamova M.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">3</strong>
+                <h3 class="hero__lesson-name">Matematika</h3>
+            </span>
+            <p class="hero__teacher">Nazarova G.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">4</strong>
+                <h3 class="hero__lesson-name">Tarix</h3>
+            </span>
+            <p class="hero__teacher">Karimov A.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">5</strong>
+                <h3 class="hero__lesson-name">Biologiya</h3>
+            </span>
+            <p class="hero__teacher">Lazizova N.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">6</strong>
+                <h3 class="hero__lesson-name">Jismoniy tarbiya</h3>
+            </span>
+            <p class="hero__teacher">Sobirov A.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">7</strong>
+                <h3 class="hero__lesson-name">Ingliz tili</h3>
+            </span>
+            <p class="hero__teacher">Behruzbek.M.A</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">8</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
     </ul>
-
-    <!-- ВТОРНИК -->
+    <!-- Seshanba -->
     <ul class="hero__list">
-        <h1 class="hero__text">Вторник</h1>
-
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">1</strong><h3 class="hero__lesson-name">Matematika</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">2</strong><h3 class="hero__lesson-name">Mental Arithmetic</h3></span><p class="hero__teacher">A.Marxabo</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">3</strong><h3 class="hero__lesson-name">Texnologiya</h3></span><p class="hero__teacher">Hadicha</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">4</strong><h3 class="hero__lesson-name">Alifbe</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">5</strong><h3 class="hero__lesson-name">Tarbiya</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">6</strong><h3 class="hero__lesson-name">Jismoniy tarbiya</h3></span><p class="hero__teacher">A.Ulug'bek</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">7</strong><h3 class="hero__lesson-name">Science</h3></span><p class="hero__teacher">S.Yulduz</p></li>
+        <h1 class="hero__text">Seshanba</h1>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">1</strong>
+                <h3 class="hero__lesson-name">Ingliz tili</h3>
+            </span>
+            <p class="hero__teacher">Behruzbek.M.A</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">2</strong>
+                <h3 class="hero__lesson-name">Matematika</h3>
+            </span>
+            <p class="hero__teacher">Nazarova G.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">3</strong>
+                <h3 class="hero__lesson-name">Ona tili</h3>
+            </span>
+            <p class="hero__teacher">Rustamova M.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">4</strong>
+                <h3 class="hero__lesson-name">Geografiya</h3>
+            </span>
+            <p class="hero__teacher">Safarov U.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">5</strong>
+                <h3 class="hero__lesson-name">Musiqa</h3>
+            </span>
+            <p class="hero__teacher">Nodirova L.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">6</strong>
+                <h3 class="hero__lesson-name">Texnologiya</h3>
+            </span>
+            <p class="hero__teacher">Rustamov T.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">7</strong>
+                <h3 class="hero__lesson-name">Tasviriy san'at</h3>
+            </span>
+            <p class="hero__teacher">Komilova F.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">8</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
     </ul>
-
-    <!-- СРЕДА -->
+    <!-- Chorshanba -->
     <ul class="hero__list">
-        <h1 class="hero__text">Среда</h1>
-
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">1</strong><h3 class="hero__lesson-name">Musiqa</h3></span><p class="hero__teacher">M.Polvonboy</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">2</strong><h3 class="hero__lesson-name">Ingliz tili</h3></span><p class="hero__teacher">V.Nodira</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">3</strong><h3 class="hero__lesson-name">Matematika</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">4</strong><h3 class="hero__lesson-name">Alifbe</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">5</strong><h3 class="hero__lesson-name">Yozuv</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">6</strong><h3 class="hero__lesson-name">Ingliz tili</h3></span><p class="hero__teacher">V.Nodira</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">7</strong><h3 class="hero__lesson-name">Matematika</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">8</strong><h3 class="hero__lesson-name">Practicum</h3></span><p class="hero__teacher">S.Yulduz</p></li>
+        <h1 class="hero__text">Chorshanba</h1>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">1</strong>
+                <h3 class="hero__lesson-name">Adabiyot</h3>
+            </span>
+            <p class="hero__teacher">Rustamova M.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">2</strong>
+                <h3 class="hero__lesson-name">Matematika</h3>
+            </span>
+            <p class="hero__teacher">Nazarova G.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">3</strong>
+                <h3 class="hero__lesson-name">Ingliz tili</h3>
+            </span>
+            <p class="hero__teacher">Behruzbek.M.A</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">4</strong>
+                <h3 class="hero__lesson-name">Tarix</h3>
+            </span>
+            <p class="hero__teacher">Karimov A.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">5</strong>
+                <h3 class="hero__lesson-name">Biologiya</h3>
+            </span>
+            <p class="hero__teacher">Lazizova N.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">6</strong>
+                <h3 class="hero__lesson-name">Jismoniy tarbiya</h3>
+            </span>
+            <p class="hero__teacher">Sobirov A.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">7</strong>
+                <h3 class="hero__lesson-name">Tarbiya</h3>
+            </span>
+            <p class="hero__teacher">Sobirova D.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">8</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
     </ul>
-
-    <!-- ЧЕТВЕРГ -->
+    <!-- Payshanba -->
     <ul class="hero__list">
-        <h1 class="hero__text">Четверг</h1>
-
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">1</strong><h3 class="hero__lesson-name">Ingliz tili</h3></span><p class="hero__teacher">V.Nodira</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">2</strong><h3 class="hero__lesson-name">Mental Arithmetic</h3></span><p class="hero__teacher">A.Marxabo</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">3</strong><h3 class="hero__lesson-name">Practicum</h3></span><p class="hero__teacher">Hadicha</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">4</strong><h3 class="hero__lesson-name">Ingliz tili</h3></span><p class="hero__teacher">V.Nodira</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">5</strong><h3 class="hero__lesson-name">Alifbe</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">6</strong><h3 class="hero__lesson-name">Yozuv</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">7</strong><h3 class="hero__lesson-name">Matematika</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">8</strong><h3 class="hero__lesson-name">Yozuv</h3></span><p class="hero__teacher">S.Yulduz</p></li>
+        <h1 class="hero__text">Payshanba</h1>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">1</strong>
+                <h3 class="hero__lesson-name">Ona tili</h3>
+            </span>
+            <p class="hero__teacher">Rustamova M.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">2</strong>
+                <h3 class="hero__lesson-name">Geografiya</h3>
+            </span>
+            <p class="hero__teacher">Safarov U.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">3</strong>
+                <h3 class="hero__lesson-name">Matematika</h3>
+            </span>
+            <p class="hero__teacher">Nazarova G.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">4</strong>
+                <h3 class="hero__lesson-name">Tasviriy san'at</h3>
+            </span>
+            <p class="hero__teacher">Komilova F.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">5</strong>
+                <h3 class="hero__lesson-name">Jismoniy tarbiya</h3>
+            </span>
+            <p class="hero__teacher">Sobirov A.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">6</strong>
+                <h3 class="hero__lesson-name">Texnologiya</h3>
+            </span>
+            <p class="hero__teacher">Rustamov T.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">7</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">8</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
     </ul>
-
-    <!-- ПЯТНИЦА -->
+    <!-- Juma -->
     <ul class="hero__list">
-        <h1 class="hero__text">Пятница</h1>
-
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">1</strong><h3 class="hero__lesson-name">Robototexnika</h3></span><p class="hero__teacher">Y.Ravshan</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">2</strong><h3 class="hero__lesson-name">Jismoniy tarbiya</h3></span><p class="hero__teacher">A.Ulug'bek</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">3</strong><h3 class="hero__lesson-name">Neyrogimnastika</h3></span><p class="hero__teacher">Sh.Maxmude</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">4</strong><h3 class="hero__lesson-name">IT</h3></span><p class="hero__teacher">O.Xurmatbek</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">5</strong><h3 class="hero__lesson-name">Practicum</h3></span><p class="hero__teacher">A.Gulnoza</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">6</strong><h3 class="hero__lesson-name">Ingliz tili</h3></span><p class="hero__teacher">V.Nodira</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">7</strong><h3 class="hero__lesson-name">Practicum</h3></span><p class="hero__teacher">S.Yulduz</p></li>
-        <li class="hero__item"><span class="hero__lesson-info"><strong class="hero__lesson-number">8</strong><h3 class="hero__lesson-name">Tasviriy san'at</h3></span><p class="hero__teacher">Maliko</p></li>
-    </ul>
-
+        <h1 class="hero__text">Juma</h1>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">1</strong>
+                <h3 class="hero__lesson-name">Ingliz tili</h3>
+            </span>
+            <p class="hero__teacher">Behruzbek.M.A</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">2</strong>
+                <h3 class="hero__lesson-name">Adabiyot</h3>
+            </span>
+            <p class="hero__teacher">Rustamova M.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">3</strong>
+                <h3 class="hero__lesson-name">Matematika</h3>
+            </span>
+            <p class="hero__teacher">Nazarova G.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">4</strong>
+                <h3 class="hero__lesson-name">Tarix</h3>
+            </span>
+            <p class="hero__teacher">Karimov A.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">5</strong>
+                <h3 class="hero__lesson-name">Biologiya</h3>
+            </span>
+            <p class="hero__teacher">Lazizova N.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">6</strong>
+                <h3 class="hero__lesson-name">Musiqa</h3>
+            </span>
+            <p class="hero__teacher">Nodirova L.</p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">7</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
+        <li class="hero__item">
+            <span class="hero__lesson-info">
+                <strong class="hero__lesson-number">8</strong>
+                <h3 class="hero__lesson-name"></h3>
+            </span>
+            <p class="hero__teacher"></p>
+        </li>
+    </ul> 
 </div>
 
             </div>
@@ -143,9 +383,9 @@
                 </p>
 
                 <nav class="footer__nav">
-                    <a href="#" class="footer__link">Расписаний</a>
-                    <a href="#" class="footer__link">Оценки</a>
-                    <a href="#" class="footer__link">Подкурсы</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/index.html" class="footer__link">Домой</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/assessments.html" class="footer__link">Мониторинг</a>
+                    <a target="_blank" href="http://127.0.0.1:5500/subcourses.html" class="footer__link">Подкурсы</a>
                 </nav>
 
                 <div class="footer__bottom">

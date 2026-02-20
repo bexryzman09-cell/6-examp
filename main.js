@@ -29,4 +29,11 @@ function togglePass() {
     else {
         obj.type = 'password';
     }
-} 
+}
+
+const commit__btn = document.querySelector(".commit__btn");
+const commit__textarea = document.querySelector(".commit__textarea");
+const coomit__form = document.querySelector(".coomit__form");
+
+
+    
